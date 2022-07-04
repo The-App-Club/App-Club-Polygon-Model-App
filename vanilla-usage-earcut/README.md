@@ -1,0 +1,2 @@
+- Reference
+  - [mapbox earcut](https://github.com/mapbox/earcut)

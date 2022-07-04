@@ -1,0 +1,3 @@
+- Reference
+  - [mapbox earcut](https://github.com/mapbox/earcut)
+  - [svg path editor](https://yqnn.github.io/svg-path-editor/)

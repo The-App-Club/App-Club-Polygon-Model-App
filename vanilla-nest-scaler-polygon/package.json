@@ -1,0 +1,9 @@
+{
+  "type": "module",
+  "dependencies": {
+    "babylonjs": "^5.10.0",
+    "culori": "^2.0.3",
+    "d3": "^7.4.4",
+    "popmotion": "^11.0.3"
+  }
+}

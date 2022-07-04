@@ -1,0 +1,7 @@
+images/*
+.gitignore
+.prettierignore
+.gitkeep
+*jpg
+*png
+*svg

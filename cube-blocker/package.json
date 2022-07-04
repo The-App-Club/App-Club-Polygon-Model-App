@@ -1,0 +1,10 @@
+{
+  "type": "module",
+  "scripts": {
+    "format": "prettier --write \"{,!(node_modules|dist|build)/**/}*.*\"",
+    "compile": "pug index.pug ;scss index.scss index.css;npm run format;"
+  },
+  "devDependencies": {
+    "prettier": "^2.3.2"
+  }
+}

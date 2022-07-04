@@ -1,0 +1,13 @@
+div.controls
+  p #[strong Add cube]: Left mouse click #[br] #[strong Delete cube]: Right mouse click #[br] #[strong Rotate]: Left and right arrow keys #[br] #[strong Ascend / Descend]:  Up and down arrow keys
+
+div.container
+  div.floor#floor
+    
+    //FLOOR TILES
+    - var i = 11;
+    - for (var x=0; x<=i; x++) {
+      - for (var y=0; y<=i; y++) {
+        div(class="f x" + x + " y" + y data-x = x*50 data-y = y*50)
+      - }
+    - }

@@ -1,0 +1,3 @@
+- Reference
+  - [mapbox earcut](https://github.com/mapbox/earcut)
+  - [threejs Earcut](https://threejs.org/docs/#api/en/extras/Earcut)

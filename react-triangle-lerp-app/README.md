@@ -1,0 +1,2 @@
+- Reference
+  - [lerp triangles](https://jsfiddle.net/RAX7/s7k5hzbx/)

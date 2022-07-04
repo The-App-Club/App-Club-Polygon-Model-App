@@ -1,0 +1,4 @@
+- Reference
+  - [animated-waffle-charts-with-d3-and-gsap](https://www.williamrchase.com/post/animated-waffle-charts-with-d3-and-gsap/)
+  - [seek](https://codesandbox.io/s/animejs-react-seeking-h8y6m?file=/src/App.js:449-521)
+  - [Play/reverse staggered animation with anime.js](https://codepen.io/rppld/pen/ZrbbVw)

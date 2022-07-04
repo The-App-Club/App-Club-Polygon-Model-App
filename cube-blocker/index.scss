@@ -1,0 +1,119 @@
+// https://codepen.io/FacepalmRobot/pen/pNKKBg
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  background: linear-gradient(
+    to bottom,
+    rgba(31, 113, 168, 1) 0%,
+    rgba(88, 186, 232, 1) 100%
+  );
+}
+
+.controls {
+  font-family: sans-serif;
+  line-height: 1.5;
+  position: absolute;
+  bottom: 2em;
+  left: 2em;
+  font-size: 0.9em;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 1em;
+  z-index: 1;
+  strong {
+    color: yellow;
+  }
+  p {
+    margin: 0;
+  }
+}
+
+.container {
+  perspective: 800px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.floor {
+  width: 600px;
+  height: 600px;
+  transform: rotateX(70deg);
+  transform-style: preserve-3d;
+}
+
+@for $x from 0 through 11 {
+  @for $y from 0 through 11 {
+    .x#{$x}.y#{$y} {
+      left: $x * 50px;
+      top: $y * 50px;
+    }
+  }
+}
+
+.f {
+  width: 50px;
+  height: 50px;
+  background: #2f3658;
+  position: absolute;
+  &:hover {
+    background: orange;
+  }
+}
+
+.w {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  box-shadow: inset 0px 0px 24px rgba(0, 0, 0, 0.53);
+  background: white;
+  &:hover {
+    box-shadow: inset 0 0 0px 4px orange;
+  }
+}
+
+.cube {
+  position: absolute;
+  transform-style: preserve-3d;
+  .w1 {
+    @extend .w;
+  }
+  .w2 {
+    @extend .w;
+    background: darken(white, 60%);
+    transform: rotateX(90deg) translateY(25px) translateZ(25px);
+  }
+  .w3 {
+    @extend .w;
+    background: darken(white, 25%);
+    transform: rotateX(90deg) rotateY(90deg) translateY(25px) translateZ(25px);
+  }
+  .w4 {
+    @extend .w;
+    background: darken(white, 40%);
+    transform: rotateX(90deg) rotateY(90deg) translateY(25px) translateZ(-25px);
+  }
+  .w5 {
+    @extend .w;
+    background: darken(white, 15%);
+    transform: rotateX(90deg) translateY(25px) translateZ(-25px);
+  }
+  .w6 {
+    @extend .w;
+    transform: translateZ(50px);
+  }
+}
+
+.c1 {
+  top: 0;
+  left: 0;
+}
+
+.c2 {
+  top: 0;
+  left: 100px;
+}

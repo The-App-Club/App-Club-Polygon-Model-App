@@ -1,0 +1,37 @@
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  user-select: none;
+  box-sizing: border-box;
+}
+
+.workspace {
+  position: absolute;
+  border: 1px solid #000;
+  top: 100px;
+  left: 100px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.polygon {
+  position: absolute;
+  animation: hide 7s infinite;
+}
+
+@keyframes hide {
+  0% {
+    fill-opacity: 1;
+  }
+
+  50% {
+    fill-opacity: 0.5;
+  }
+
+  100% {
+    fill-opacity: 0;
+  }
+}

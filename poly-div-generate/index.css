@@ -1,0 +1,116 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.surface.is-active,
+.surface.is-active:hover {
+  border: 3px dotted rgb(211, 145, 83);
+}
+
+.surface {
+  position: absolute;
+  transform-origin: center center;
+}
+
+.surface.is-active .rotate {
+  visibility: visible;
+}
+
+.rotate {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #46df41;
+  visibility: hidden;
+}
+
+.rotate-top-left {
+  position: absolute;
+  top: -5px;
+  left: -5px;
+}
+.rotate-top-right {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+}
+.rotate-bottom-left {
+  position: absolute;
+  bottom: -5px;
+  left: -5px;
+}
+.rotate-bottom-right {
+  position: absolute;
+  bottom: -5px;
+  right: -5px;
+}
+
+.rotate-top-left:hover,
+.rotate-top-right:hover,
+.rotate-bottom-right:hover,
+.rotate-bottom-left:hover {
+  cursor: move;
+}
+
+.vertex {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #4341df;
+  border: 3px solid #4341df;
+  position: absolute;
+  z-index: 1;
+}
+
+.vertex:hover {
+  cursor: move;
+}
+
+.item {
+  position: absolute;
+  background: linear-gradient(45deg, deeppink, orange);
+  clip-path: var(--clipPath);
+}
+
+.item::before {
+  position: absolute;
+  width: 3px;
+  height: 30px;
+  background-color: aqua;
+}
+
+.A {
+  background: rgb(235, 217, 0);
+  opacity: 1;
+}
+.B {
+  background: rgb(255, 162, 159);
+
+  opacity: 0.83;
+}
+.C {
+  background: rgb(255, 192, 203);
+  opacity: 0.66;
+}
+.D {
+  background: rgb(149, 126, 165);
+  opacity: 0.5;
+}
+.E {
+  background: rgb(192, 0, 135);
+  opacity: 0.33;
+}
+.F {
+  background: rgb(0, 0, 0);
+  opacity: 0.16;
+}

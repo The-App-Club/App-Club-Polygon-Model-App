@@ -1,0 +1,17 @@
+{
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vite build",
+    "serve": "vite preview",
+    "format": "prettier --write \"{,!(node_modules|dist|build)/**/}*.*\""
+  },
+  "devDependencies": {
+    "prettier": "^2.4.1",
+    "vite": "^2.3.0"
+  },
+  "dependencies": {
+    "mondrian-art": "^0.1.0",
+    "sass": "^1.51.0",
+    "three": "^0.140.0"
+  }
+}

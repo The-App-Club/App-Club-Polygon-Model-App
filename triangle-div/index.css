@@ -1,0 +1,44 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  user-select: none;
+}
+.dot {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: rgb(26, 26, 27);
+}
+.item {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  line-height: 32px;
+  border-radius: 50%;
+  font-weight: 600;
+  font-size: large;
+}
+
+.item:nth-child(1) {
+  top: 100px;
+  left: 300px;
+  color: white;
+  background-color: rgb(31, 90, 199);
+}
+.item:nth-child(2) {
+  bottom: 100px;
+  left: 300px;
+  color: white;
+  background-color: rgb(1, 66, 1);
+}
+.item:nth-child(3) {
+  bottom: 100px;
+  right: 300px;
+  color: white;
+  background-color: rgb(168, 11, 42);
+}

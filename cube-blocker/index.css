@@ -1,0 +1,831 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  background: linear-gradient(to bottom, #1f71a8 0%, #58bae8 100%);
+}
+
+.controls {
+  font-family: sans-serif;
+  line-height: 1.5;
+  position: absolute;
+  bottom: 2em;
+  left: 2em;
+  font-size: 0.9em;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 1em;
+  z-index: 1;
+}
+.controls strong {
+  color: yellow;
+}
+.controls p {
+  margin: 0;
+}
+
+.container {
+  perspective: 800px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.floor {
+  width: 600px;
+  height: 600px;
+  transform: rotateX(70deg);
+  transform-style: preserve-3d;
+}
+
+.x0.y0 {
+  left: 0px;
+  top: 0px;
+}
+
+.x0.y1 {
+  left: 0px;
+  top: 50px;
+}
+
+.x0.y2 {
+  left: 0px;
+  top: 100px;
+}
+
+.x0.y3 {
+  left: 0px;
+  top: 150px;
+}
+
+.x0.y4 {
+  left: 0px;
+  top: 200px;
+}
+
+.x0.y5 {
+  left: 0px;
+  top: 250px;
+}
+
+.x0.y6 {
+  left: 0px;
+  top: 300px;
+}
+
+.x0.y7 {
+  left: 0px;
+  top: 350px;
+}
+
+.x0.y8 {
+  left: 0px;
+  top: 400px;
+}
+
+.x0.y9 {
+  left: 0px;
+  top: 450px;
+}
+
+.x0.y10 {
+  left: 0px;
+  top: 500px;
+}
+
+.x0.y11 {
+  left: 0px;
+  top: 550px;
+}
+
+.x1.y0 {
+  left: 50px;
+  top: 0px;
+}
+
+.x1.y1 {
+  left: 50px;
+  top: 50px;
+}
+
+.x1.y2 {
+  left: 50px;
+  top: 100px;
+}
+
+.x1.y3 {
+  left: 50px;
+  top: 150px;
+}
+
+.x1.y4 {
+  left: 50px;
+  top: 200px;
+}
+
+.x1.y5 {
+  left: 50px;
+  top: 250px;
+}
+
+.x1.y6 {
+  left: 50px;
+  top: 300px;
+}
+
+.x1.y7 {
+  left: 50px;
+  top: 350px;
+}
+
+.x1.y8 {
+  left: 50px;
+  top: 400px;
+}
+
+.x1.y9 {
+  left: 50px;
+  top: 450px;
+}
+
+.x1.y10 {
+  left: 50px;
+  top: 500px;
+}
+
+.x1.y11 {
+  left: 50px;
+  top: 550px;
+}
+
+.x2.y0 {
+  left: 100px;
+  top: 0px;
+}
+
+.x2.y1 {
+  left: 100px;
+  top: 50px;
+}
+
+.x2.y2 {
+  left: 100px;
+  top: 100px;
+}
+
+.x2.y3 {
+  left: 100px;
+  top: 150px;
+}
+
+.x2.y4 {
+  left: 100px;
+  top: 200px;
+}
+
+.x2.y5 {
+  left: 100px;
+  top: 250px;
+}
+
+.x2.y6 {
+  left: 100px;
+  top: 300px;
+}
+
+.x2.y7 {
+  left: 100px;
+  top: 350px;
+}
+
+.x2.y8 {
+  left: 100px;
+  top: 400px;
+}
+
+.x2.y9 {
+  left: 100px;
+  top: 450px;
+}
+
+.x2.y10 {
+  left: 100px;
+  top: 500px;
+}
+
+.x2.y11 {
+  left: 100px;
+  top: 550px;
+}
+
+.x3.y0 {
+  left: 150px;
+  top: 0px;
+}
+
+.x3.y1 {
+  left: 150px;
+  top: 50px;
+}
+
+.x3.y2 {
+  left: 150px;
+  top: 100px;
+}
+
+.x3.y3 {
+  left: 150px;
+  top: 150px;
+}
+
+.x3.y4 {
+  left: 150px;
+  top: 200px;
+}
+
+.x3.y5 {
+  left: 150px;
+  top: 250px;
+}
+
+.x3.y6 {
+  left: 150px;
+  top: 300px;
+}
+
+.x3.y7 {
+  left: 150px;
+  top: 350px;
+}
+
+.x3.y8 {
+  left: 150px;
+  top: 400px;
+}
+
+.x3.y9 {
+  left: 150px;
+  top: 450px;
+}
+
+.x3.y10 {
+  left: 150px;
+  top: 500px;
+}
+
+.x3.y11 {
+  left: 150px;
+  top: 550px;
+}
+
+.x4.y0 {
+  left: 200px;
+  top: 0px;
+}
+
+.x4.y1 {
+  left: 200px;
+  top: 50px;
+}
+
+.x4.y2 {
+  left: 200px;
+  top: 100px;
+}
+
+.x4.y3 {
+  left: 200px;
+  top: 150px;
+}
+
+.x4.y4 {
+  left: 200px;
+  top: 200px;
+}
+
+.x4.y5 {
+  left: 200px;
+  top: 250px;
+}
+
+.x4.y6 {
+  left: 200px;
+  top: 300px;
+}
+
+.x4.y7 {
+  left: 200px;
+  top: 350px;
+}
+
+.x4.y8 {
+  left: 200px;
+  top: 400px;
+}
+
+.x4.y9 {
+  left: 200px;
+  top: 450px;
+}
+
+.x4.y10 {
+  left: 200px;
+  top: 500px;
+}
+
+.x4.y11 {
+  left: 200px;
+  top: 550px;
+}
+
+.x5.y0 {
+  left: 250px;
+  top: 0px;
+}
+
+.x5.y1 {
+  left: 250px;
+  top: 50px;
+}
+
+.x5.y2 {
+  left: 250px;
+  top: 100px;
+}
+
+.x5.y3 {
+  left: 250px;
+  top: 150px;
+}
+
+.x5.y4 {
+  left: 250px;
+  top: 200px;
+}
+
+.x5.y5 {
+  left: 250px;
+  top: 250px;
+}
+
+.x5.y6 {
+  left: 250px;
+  top: 300px;
+}
+
+.x5.y7 {
+  left: 250px;
+  top: 350px;
+}
+
+.x5.y8 {
+  left: 250px;
+  top: 400px;
+}
+
+.x5.y9 {
+  left: 250px;
+  top: 450px;
+}
+
+.x5.y10 {
+  left: 250px;
+  top: 500px;
+}
+
+.x5.y11 {
+  left: 250px;
+  top: 550px;
+}
+
+.x6.y0 {
+  left: 300px;
+  top: 0px;
+}
+
+.x6.y1 {
+  left: 300px;
+  top: 50px;
+}
+
+.x6.y2 {
+  left: 300px;
+  top: 100px;
+}
+
+.x6.y3 {
+  left: 300px;
+  top: 150px;
+}
+
+.x6.y4 {
+  left: 300px;
+  top: 200px;
+}
+
+.x6.y5 {
+  left: 300px;
+  top: 250px;
+}
+
+.x6.y6 {
+  left: 300px;
+  top: 300px;
+}
+
+.x6.y7 {
+  left: 300px;
+  top: 350px;
+}
+
+.x6.y8 {
+  left: 300px;
+  top: 400px;
+}
+
+.x6.y9 {
+  left: 300px;
+  top: 450px;
+}
+
+.x6.y10 {
+  left: 300px;
+  top: 500px;
+}
+
+.x6.y11 {
+  left: 300px;
+  top: 550px;
+}
+
+.x7.y0 {
+  left: 350px;
+  top: 0px;
+}
+
+.x7.y1 {
+  left: 350px;
+  top: 50px;
+}
+
+.x7.y2 {
+  left: 350px;
+  top: 100px;
+}
+
+.x7.y3 {
+  left: 350px;
+  top: 150px;
+}
+
+.x7.y4 {
+  left: 350px;
+  top: 200px;
+}
+
+.x7.y5 {
+  left: 350px;
+  top: 250px;
+}
+
+.x7.y6 {
+  left: 350px;
+  top: 300px;
+}
+
+.x7.y7 {
+  left: 350px;
+  top: 350px;
+}
+
+.x7.y8 {
+  left: 350px;
+  top: 400px;
+}
+
+.x7.y9 {
+  left: 350px;
+  top: 450px;
+}
+
+.x7.y10 {
+  left: 350px;
+  top: 500px;
+}
+
+.x7.y11 {
+  left: 350px;
+  top: 550px;
+}
+
+.x8.y0 {
+  left: 400px;
+  top: 0px;
+}
+
+.x8.y1 {
+  left: 400px;
+  top: 50px;
+}
+
+.x8.y2 {
+  left: 400px;
+  top: 100px;
+}
+
+.x8.y3 {
+  left: 400px;
+  top: 150px;
+}
+
+.x8.y4 {
+  left: 400px;
+  top: 200px;
+}
+
+.x8.y5 {
+  left: 400px;
+  top: 250px;
+}
+
+.x8.y6 {
+  left: 400px;
+  top: 300px;
+}
+
+.x8.y7 {
+  left: 400px;
+  top: 350px;
+}
+
+.x8.y8 {
+  left: 400px;
+  top: 400px;
+}
+
+.x8.y9 {
+  left: 400px;
+  top: 450px;
+}
+
+.x8.y10 {
+  left: 400px;
+  top: 500px;
+}
+
+.x8.y11 {
+  left: 400px;
+  top: 550px;
+}
+
+.x9.y0 {
+  left: 450px;
+  top: 0px;
+}
+
+.x9.y1 {
+  left: 450px;
+  top: 50px;
+}
+
+.x9.y2 {
+  left: 450px;
+  top: 100px;
+}
+
+.x9.y3 {
+  left: 450px;
+  top: 150px;
+}
+
+.x9.y4 {
+  left: 450px;
+  top: 200px;
+}
+
+.x9.y5 {
+  left: 450px;
+  top: 250px;
+}
+
+.x9.y6 {
+  left: 450px;
+  top: 300px;
+}
+
+.x9.y7 {
+  left: 450px;
+  top: 350px;
+}
+
+.x9.y8 {
+  left: 450px;
+  top: 400px;
+}
+
+.x9.y9 {
+  left: 450px;
+  top: 450px;
+}
+
+.x9.y10 {
+  left: 450px;
+  top: 500px;
+}
+
+.x9.y11 {
+  left: 450px;
+  top: 550px;
+}
+
+.x10.y0 {
+  left: 500px;
+  top: 0px;
+}
+
+.x10.y1 {
+  left: 500px;
+  top: 50px;
+}
+
+.x10.y2 {
+  left: 500px;
+  top: 100px;
+}
+
+.x10.y3 {
+  left: 500px;
+  top: 150px;
+}
+
+.x10.y4 {
+  left: 500px;
+  top: 200px;
+}
+
+.x10.y5 {
+  left: 500px;
+  top: 250px;
+}
+
+.x10.y6 {
+  left: 500px;
+  top: 300px;
+}
+
+.x10.y7 {
+  left: 500px;
+  top: 350px;
+}
+
+.x10.y8 {
+  left: 500px;
+  top: 400px;
+}
+
+.x10.y9 {
+  left: 500px;
+  top: 450px;
+}
+
+.x10.y10 {
+  left: 500px;
+  top: 500px;
+}
+
+.x10.y11 {
+  left: 500px;
+  top: 550px;
+}
+
+.x11.y0 {
+  left: 550px;
+  top: 0px;
+}
+
+.x11.y1 {
+  left: 550px;
+  top: 50px;
+}
+
+.x11.y2 {
+  left: 550px;
+  top: 100px;
+}
+
+.x11.y3 {
+  left: 550px;
+  top: 150px;
+}
+
+.x11.y4 {
+  left: 550px;
+  top: 200px;
+}
+
+.x11.y5 {
+  left: 550px;
+  top: 250px;
+}
+
+.x11.y6 {
+  left: 550px;
+  top: 300px;
+}
+
+.x11.y7 {
+  left: 550px;
+  top: 350px;
+}
+
+.x11.y8 {
+  left: 550px;
+  top: 400px;
+}
+
+.x11.y9 {
+  left: 550px;
+  top: 450px;
+}
+
+.x11.y10 {
+  left: 550px;
+  top: 500px;
+}
+
+.x11.y11 {
+  left: 550px;
+  top: 550px;
+}
+
+.f {
+  width: 50px;
+  height: 50px;
+  background: #2f3658;
+  position: absolute;
+}
+.f:hover {
+  background: orange;
+}
+
+.w,
+.cube .w1,
+.cube .w2,
+.cube .w3,
+.cube .w4,
+.cube .w5,
+.cube .w6 {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  box-shadow: inset 0px 0px 24px rgba(0, 0, 0, 0.53);
+  background: white;
+}
+.w:hover,
+.cube .w1:hover,
+.cube .w2:hover,
+.cube .w3:hover,
+.cube .w4:hover,
+.cube .w5:hover,
+.cube .w6:hover {
+  box-shadow: inset 0 0 0px 4px orange;
+}
+
+.cube {
+  position: absolute;
+  transform-style: preserve-3d;
+}
+.cube .w2 {
+  background: #666666;
+  transform: rotateX(90deg) translateY(25px) translateZ(25px);
+}
+.cube .w3 {
+  background: #bfbfbf;
+  transform: rotateX(90deg) rotateY(90deg) translateY(25px) translateZ(25px);
+}
+.cube .w4 {
+  background: #999999;
+  transform: rotateX(90deg) rotateY(90deg) translateY(25px) translateZ(-25px);
+}
+.cube .w5 {
+  background: #d9d9d9;
+  transform: rotateX(90deg) translateY(25px) translateZ(-25px);
+}
+.cube .w6 {
+  transform: translateZ(50px);
+}
+
+.c1 {
+  top: 0;
+  left: 0;
+}
+
+.c2 {
+  top: 0;
+  left: 100px;
+}
+
+/*# sourceMappingURL=a.css.map */

@@ -1,0 +1,11 @@
+node_modules
+.gitignore
+.prettierignore
+.stylelintignore
+node_modules
+*png
+*jpg
+*webp
+*svg
+*ico
+yarn.lock

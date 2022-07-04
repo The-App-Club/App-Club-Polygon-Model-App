@@ -1,0 +1,10 @@
+{
+  "type": "module",
+  "dependencies": {
+    "@georgedoescode/generative-utils": "^1.0.38",
+    "@timohausmann/quadtree-js": "^1.2.5"
+  },
+  "devDependencies": {
+    "esm": "^3.2.25"
+  }
+}

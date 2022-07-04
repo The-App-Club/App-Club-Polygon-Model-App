@@ -1,0 +1,9 @@
+{
+  "type": "module",
+  "dependencies": {
+    "array-each-slice": "^1.0.1",
+    "d3": "^7.4.4",
+    "d3-delaunay": "^6.0.2",
+    "earcut": "^2.2.3"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "module",
+  "dependencies": {
+    "chance": "^1.1.8",
+    "culori": "^2.0.3",
+    "linspace": "^1.0.2",
+    "nurbs": "^1.1.1",
+    "popmotion": "^11.0.3",
+    "svg-path-commander": "^1.0.5"
+  }
+}

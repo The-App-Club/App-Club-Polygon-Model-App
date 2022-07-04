@@ -1,0 +1,11 @@
+{
+  "type": "module",
+  "dependencies": {
+    "array-normalize": "^2.0.0",
+    "delaunator": "^5.0.0",
+    "three": "^0.139.2"
+  },
+  "devDependencies": {
+    "esm": "^3.2.25"
+  }
+}

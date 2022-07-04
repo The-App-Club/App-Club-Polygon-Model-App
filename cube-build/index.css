@@ -1,0 +1,32 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+svg {
+  display: block;
+  border: 1px solid;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.polygon {
+  fill: #e49c3e;
+  stroke: #000000;
+  stroke-width: 1;
+}
+.polyline {
+  fill: none;
+  stroke: #000000;
+  stroke-width: 1;
+}
+.controller {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
