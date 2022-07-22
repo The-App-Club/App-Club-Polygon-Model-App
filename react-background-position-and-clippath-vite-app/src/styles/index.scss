@@ -1,0 +1,76 @@
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter';
+}
+
+//
+// Burger menu custom styles
+//
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  left: 36px;
+  top: 36px;
+}
+
+// Outline for burger button focus state
+.bm-burger-button button:focus {
+  outline: 2px solid #c94e50;
+  outline-offset: 8px;
+}
+
+// Background color for burger bars focus state
+.bm-burger-button {
+  button:focus + span {
+    span.bm-burger-bars {
+      background-color: #c94e50;
+    }
+  }
+}
+
+.right .bm-burger-button {
+  left: initial;
+  right: 36px;
+}
+
+.bm-burger-bars {
+  background: #373a47;
+}
+
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+.bm-menu {
+  background: #373a47;
+
+  a {
+    color: #b8b7ad;
+
+    &:hover,
+    &:focus {
+      color: #c94e50;
+    }
+  }
+}
+
+.bm-item-list a {
+  padding: 0.8em;
+
+  span {
+    margin-left: 10px;
+    font-weight: 700;
+  }
+}
+
+.bm-item:focus {
+  outline: none;
+}
